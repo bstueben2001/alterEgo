@@ -1,0 +1,38 @@
+.listing-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.listing-card-swatch {
+  position: relative;
+  height: 130px;
+  margin: -20px -20px 14px;
+  border-bottom: 3px solid var(--ink);
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.12) 0 6px,
+    transparent 6px 16px
+  );
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.listing-card-sold {
+  background: var(--ink);
+}
+
+.listing-card-title {
+  margin: 0 0 4px;
+  font-size: 15px;
+}
+
+.listing-card-seller {
+  font-size: 12px;
+  margin: 0 0 12px;
+  color: var(--text-dim);
+}

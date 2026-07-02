@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+
+# Runtime data (regenerated from seed on first boot)
+server/data/store.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Env
+*.local
+.env
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

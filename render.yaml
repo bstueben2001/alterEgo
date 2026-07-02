@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: alterego
+    runtime: node
+    plan: free
+    buildCommand: cd client && npm install && npm run build && cd ../server && npm install
+    startCommand: cd server && npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SESSION_SECRET
+        generateValue: true
+
+# Note: this service has no persistent disk, so server/data/store.json
+# (accounts, listings, orders) resets to the seed data on every deploy
+# and whenever the free-tier instance spins down from inactivity.
+# To keep data across restarts, add a paid instance with a Render Disk
+# mounted at server/data, or migrate storage to a real database.

@@ -1,0 +1,37 @@
+.listing-detail {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.listing-detail-swatch {
+  position: relative;
+  height: 220px;
+  margin: -20px -20px 20px;
+  border-bottom: 3px solid var(--ink);
+  background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.12) 0 8px, transparent 8px 20px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 14px;
+}
+
+.listing-detail-seller-link {
+  color: var(--indigo-bright);
+  text-decoration: underline;
+}
+
+.listing-detail-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 2px dashed var(--border);
+}
+
+.listing-detail-actions {
+  display: flex;
+  gap: 10px;
+}

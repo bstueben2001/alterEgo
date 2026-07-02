@@ -1,0 +1,55 @@
+.hero {
+  text-align: center;
+  margin-bottom: 32px;
+  padding: 48px 24px;
+  background-color: var(--ink-soft);
+  background-image:
+    radial-gradient(circle at 12% 25%, rgba(145, 134, 255, 0.4), transparent 32%),
+    radial-gradient(circle at 88% 12%, rgba(201, 205, 211, 0.22), transparent 28%),
+    radial-gradient(circle at 65% 92%, rgba(91, 77, 224, 0.35), transparent 38%),
+    radial-gradient(circle 7px at 30% 75%, var(--silver), transparent 60%),
+    radial-gradient(circle 5px at 78% 55%, var(--indigo-bright), transparent 60%),
+    radial-gradient(circle 4px at 20% 45%, var(--indigo), transparent 60%),
+    radial-gradient(circle 3px at 92% 80%, var(--silver-dim), transparent 60%);
+}
+
+.hero h1 {
+  max-width: 700px;
+  margin: 0 auto 28px;
+}
+
+.hero p {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.browse-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.browse-search {
+  flex: 1;
+  min-width: 220px;
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--text);
+  background: var(--ink-soft);
+  border: 2px solid var(--border);
+  padding: 12px 14px;
+}
+
+.browse-search:focus {
+  outline: none;
+  border-color: var(--indigo);
+}
+
+.browse-categories {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
